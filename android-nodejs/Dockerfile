@@ -1,4 +1,4 @@
-# Docker android-build image
+# Docker android-build node js image
 
 FROM beevelop/android-nodejs
 MAINTAINER Aneesv <vaneesv@gmail.com>
