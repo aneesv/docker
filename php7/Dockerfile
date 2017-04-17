@@ -30,7 +30,7 @@ RUN  apt-get update \
     # ZIP
     &&  apt-get install -y zlib1g-dev && docker-php-ext-configure zip --with-zlib-dir=/usr && docker-php-ext-install zip \
     # PDO PDO Mysql
-    &&  docker-php-ext-install pdo pdo_mysql \
+    &&  docker-php-ext-install pdo pdo_mysql gettext mbstring intl \
     # Remove apt lists to reduce image size
     &&  rm -rf /var/lib/apt/lists/*
-
+	
